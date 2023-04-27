@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashTyper</title>
+    <link rel="stylesheet" href="typer.css">
+</head>
+<body>
+    
+    <header>
+        <h1>FlashTyper</h1>
+    </header>
+    <div class="container">
+        <!-- word & input-->
+
+        <div class="canvas">
+            <div class="title">type word in <span class="seconds">5</span> seconds</div>
+
+            <div class="board">
+                <h2 id="current-word">hello</h2>
+                <input type="text" id="word-input" placeholder="Start typing..." autofocus>
+                <h3><span id="message"></span></h3>
+
+                <!--time and score columns-->
+                <div class="time-score">
+                    <div class="time">
+                        <h3>Time: <span id="time">0</span></h3>
+                    </div>
+
+                    <div class="score">
+                        <h3>Score: <span id="score">0</span></h3>
+                    </div>
+                </div>
+                
+                <!--Instruction-->
+                <div class="terms">
+                    <div class="card">
+                        <div class="instruction">
+                            <h3>Instruction</h3>
+                            <p>Type each word in the given amount of seconds to score. <br> 
+                                To play again just type the current word. <br>
+                                Your score will reset.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="typer.js"></script>
+</body>
+</html>
